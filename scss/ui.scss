@@ -1,0 +1,304 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 5.6rem;
+  line-height: 104%;
+  letter-spacing: 2px;
+}
+h2 {
+  font-size: 4rem;
+  line-height: 110%;
+  letter-spacing: 1.42857px;
+}
+h3 {
+  font-size: 3.2rem;
+  line-height: 112%;
+  letter-spacing: 1.14286px;
+}
+h4 {
+  font-size: 2.8rem;
+  line-height: 135%;
+  letter-spacing: 2px;
+}
+h5 {
+  font-size: 24rem;
+  line-height: 137%;
+  letter-spacing: 1.71429px;
+}
+h6 {
+  font-size: 1.8rem;
+  line-height: 138%;
+  letter-spacing: 1.28571px;
+}
+p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 167%;
+}
+
+// Logo
+.logo {
+  width: 143px;
+  height: 25px;
+}
+// Buttons
+
+.btn {
+  font-size: 1.3rem;
+  line-height: 138%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 1.5rem 2.95rem 1.5rem 3.1rem;
+  color: $blackColor;
+
+  &--primary {
+    color: $whiteColor;
+    background-color: $primaryColor;
+    &:hover {
+      background-color: $secondaryColor;
+    }
+  }
+  &--outline {
+    border: 1px solid $blackColor;
+    &:hover {
+      background-color: $blackColor;
+      color: $whiteColor;
+    }
+  }
+}
+.btn-text {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 138%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.btn-text--with-arrow {
+  &::before {
+    position: absolute;
+    top: 27%;
+    right: -13px;
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    border-top: 2px solid $primaryColor;
+    border-right: 2px solid $primaryColor;
+  }
+  &:hover {
+    color: $primaryColor;
+    &::before {
+      right: -18px;
+    }
+  }
+}
+
+// Icon menu (burger)
+.icon-menu {
+  cursor: pointer;
+  display: none;
+  width: 23px;
+  height: 20px;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+  span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #fff;
+  }
+}
+
+// Wrapper
+.wrapper {
+  background-color: $whiteColor;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+// Container
+.subtitle {
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  color: $whiteColor;
+  opacity: 0.5;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+// main
+.main {
+  flex: 1 1 auto;
+}
+// menu
+
+.menu {
+  // .menu__icon
+
+  &__icon {
+    @media (max-width: 768px) {
+    }
+  }
+
+  // .menu__body
+
+  &__body {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  // .menu__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 3.4rem;
+  }
+
+  // .menu__link
+
+  &__link {
+    color: $whiteColor;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s ease 0s;
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}
+
+.cart {
+  cursor: pointer;
+}
+
+// social
+
+.social {
+  // .social__link
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+
+  &__link {
+    svg {
+      fill: $whiteColor;
+    }
+    &:hover {
+      svg {
+        fill: $primaryColor;
+      }
+    }
+  }
+}
+
+/*
+.special-offers {
+  // .special-offers__header
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    padding: 0px 0px 20rem 0px;
+  }
+  &__header {
+    flex-basis: 100%;
+    background-color: $secondaryColor;
+    background-image: url('../images/desktop/image-speaker-zx9.png');
+    @media (max-width: 768px) {
+      background-image: url('../images/tablet/image-speaker-zx9.png');
+    }
+    background-repeat: no-repeat;
+    background-size: 410px 493px;
+    background-position: 117px 105px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 133px 0px 124px 0px;
+    .special-offers__title {
+      color: $whiteColor;
+      font-size: 5.6rem;
+      margin: 0px 0px 2.4rem 0px;
+    }
+    .special-offers__text {
+      color: rgb(255, 255, 255, 0.75);
+    }
+    .special-offers__btn {
+    }
+  }
+  &__content {
+    flex-basis: 349px;
+  }
+  // .special-offers__title
+
+  &__title {
+    margin: 0px 0px 3.2rem 0px;
+  }
+
+  // .special-offers__text
+
+  &__text {
+    margin: 0px 0px 3.2rem 0px;
+  }
+
+  // .special-offers__btn
+
+  &__btn {
+  }
+
+  // .special-offers__main
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px 30px;
+  }
+
+  // .special-offers__item
+
+  &__item {
+    background-color: $whiteColor2;
+    flex-basis: 540px;
+    &:first-child {
+      flex-basis: 100%;
+      padding: 100px 0px 100px 95px;
+      background: url('../images/desktop/image-speaker-zx7.jpg') 0 0 no-repeat;
+    }
+  }
+  .special-offers__item--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  // .special-offers__image
+
+  &__image {
+    flex-basis: 540px;
+  }
+}
+
+*/
