@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Scripts -->
+    <script src="/js/main.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -32,12 +35,61 @@
               </ul>
             </nav>
           </div>
-          <a href="/checkout.html" class="cart">
+          <button class="cart">
             <img src="./images/cart.svg" alt="Cart" />
-          </a>
+            <span class="cart__count">3</span>
+          </button>
+          <!-- Modal -->
+          <div class="modal-cart hidden">
+            <div class="modal-cart__header">
+              <h4 class="modal-cart__title">Cart <span>(3)</span></h4>
+              <button class="modal-cart__remove">Remove all</button>
+            </div>
+            <div class="modal-cart__items">
+              <div class="modal-cart__item">
+                <img src="/images/cart/image-xx99-mark-two-headphones.jpg" alt=" X99 MK II" width="64" height="64">
+                <div class="modal-cart__item-info">
+                  <h6 class="modal-cart__item-title">X99 MK II</h6>
+                  <p class="modal-cart__item-price">$ 2,999</p>
+                </div>
+                <div class="input--range modal-cart__item-input">
+                  <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                  <input type="number" min="0" value="1" readonly>
+                  <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                </div>
+              </div>
+              <div class="modal-cart__item">
+                <img src="/images/cart/image-xx59-headphones.jpg" alt="XX 59" width="64" height="64">
+                <div class="modal-cart__item-info">
+                  <h6 class="modal-cart__item-title">XX59</h6>
+                  <p class="modal-cart__item-price">$ 899</p>
+                </div>
+                <div class="input--range modal-cart__item-input">
+                  <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                  <input type="number" min="1" value="2" readonly>
+                  <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                </div>
+              </div>
+              <div class="modal-cart__item">
+                <img src="/images/cart/image-yx1-earphones.jpg" alt="YX1" width="64" height="64">
+                <div class="modal-cart__item-info">
+                  <h6 class="modal-cart__item-title">YX1</h6>
+                  <p class="modal-cart__item-price">$ 599</p>
+                </div>
+                <div class="input--range modal-cart__item-input">
+                  <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                  <input type="number" min="0" value="1" readonly>
+                  <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-cart__summary">
+              Total <span>$ 5,396</span>
+            </div>
+            <a href="/checkout.html" class="btn btn--primary modal-cart__checkout-btn">Checkout</a>
+          </div>
         </div>
       </header>
-
       <main class="main">
         <section class="banner-block">
           <div class="banner-block__container container">
@@ -182,3 +234,4 @@
     </div>
   </body>
 </html>
+

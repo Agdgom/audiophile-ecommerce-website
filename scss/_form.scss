@@ -27,3 +27,58 @@ input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button {
   display: none;
 }
+
+// Range Number input
+.input--range {
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  background-color: #f1f1f1;
+  input[type='number'] {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+    text-align: center;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  input[type='number']::-webkit-outer-spin-button,
+  .number input[type='number']::-webkit-inner-spin-button {
+    display: none;
+  }
+  .number-minus,
+  .number-plus {
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    width: 16px;
+    display: block;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0, 0.25);
+  }
+  .number-minus {
+    left: 1.55rem;
+  }
+  .number-plus {
+    right: 1.55rem;
+  }
+}
+
+/*
+<div class="input--range">
+	<button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+	<input type="number" min="0" value="1" readonly>
+	<button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+</div>
+
+*/

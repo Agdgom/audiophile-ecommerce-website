@@ -1,0 +1,97 @@
+// Modal Cart
+
+.modal-cart {
+  padding: 3.2rem 3.3rem;
+  // .modal-cart__header
+  position: absolute;
+  right: 0;
+  top: 130%;
+  background-color: $whiteColor;
+  width: 377px;
+  border-radius: 8px;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+
+  // .modal-cart__title
+
+  &__title {
+  }
+
+  // .modal-cart__remove
+
+  &__remove {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-decoration-line: underline;
+    color: rgba($color: $blackColorPrimary, $alpha: 0.5);
+  }
+
+  // .modal-cart__items
+
+  &__items {
+    margin-bottom: 3.2rem;
+  }
+
+  // .modal-cart__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:not(:last-child) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  // .modal-cart__item-info
+
+  &__item-info {
+  }
+
+  // .modal-cart__item-title
+
+  &__item-title {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  // .modal-cart__item-price
+
+  &__item-price {
+  }
+
+  // .modal-cart__item-input
+
+  &__item-input {
+  }
+
+  // .modal-cart__summary
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: rgba($color: $blackColorPrimary, $alpha: 0.5);
+    text-transform: uppercase;
+    span {
+      font-weight: bold;
+      color: rgba($color: $blackColorPrimary, $alpha: 1);
+    }
+  }
+
+  // .modal-cart__checkout-btn
+
+  &__checkout-btn {
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+  }
+}
