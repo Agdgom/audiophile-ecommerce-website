@@ -34,7 +34,7 @@
 
   &__content {
     color: $whiteColor;
-    flex-basis: 396px / 1110px * 100%;
+    flex-basis: calc(396px / 1110px) * 100%;
   }
 
   // .banner-block__subtitle
