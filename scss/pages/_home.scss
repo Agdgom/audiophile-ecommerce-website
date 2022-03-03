@@ -4,6 +4,7 @@
   // .banner-block__container
   background-color: #191919;
   background-image: url('../images/desktop/image-hero.jpg');
+  background-repeat: no-repeat;
   background-position: 40% 0%;
   height: 729px;
   padding-top: 90px + 125px;
@@ -147,15 +148,15 @@
       grid-area: area-2;
       justify-content: flex-start;
       padding-left: 9.5rem;
-      background: url('/images/desktop/image-speaker-zx7.jpg') no-repeat center;
+      background: url('../images/desktop/image-speaker-zx7.jpg') no-repeat center;
       @media (max-width: 768px) {
-        background: url('/images/tablet/image-speaker-zx7.jpg');
+        background: url('../images/tablet/image-speaker-zx7.jpg');
         background-repeat: no-repeat;
         background-size: cover;
       }
       @media (max-width: 540px) {
         padding-left: 1rem;
-        background: url('/images/mobile/image-speaker-zx7.jpg');
+        background: url('../images/mobile/image-speaker-zx7.jpg');
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -194,7 +195,7 @@
     text-transform: uppercase;
     color: #ffffff;
     background-color: $primaryColor;
-    background-image: url('/images/desktop/image-speaker-zx9.png');
+    background-image: url('../images/desktop/image-speaker-zx9.png');
     background-size: 410px 493px;
     background-repeat: no-repeat;
     background-position: 20% 120%;

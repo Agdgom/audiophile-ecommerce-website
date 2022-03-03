@@ -1,4 +1,4 @@
-@import '../modals/cart.scss'; // modal cart
+@import '../modals/_cart.scss'; // modal cart
 // HEADER
 .header {
   position: absolute;
@@ -50,7 +50,6 @@
 
   &__body {
     @media (max-width: 768px) {
-      display: none;
     }
   }
 
@@ -65,16 +64,6 @@
   // .menu__link
 
   &__link {
-    color: $whiteColor;
-    font-weight: bold;
-    font-size: 1.3rem;
-    line-height: 2.5rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: color 0.3s ease 0s;
-    &:hover {
-      color: $primaryColor;
-    }
   }
 }
 

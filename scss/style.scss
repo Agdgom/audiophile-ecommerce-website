@@ -26,6 +26,7 @@
 // Details Page
 @import 'pages/details.scss';
 .wrapper {
+  position: relative;
   background-color: $whiteColor;
   width: 100%;
   min-height: 100%;

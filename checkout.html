@@ -35,9 +35,10 @@
               </ul>
             </nav>
           </div>
-          <a href="/checkout.html" class="cart">
+          <button class="cart">
             <img src="./images/cart.svg" alt="Cart" />
-          </a>
+            <span class="cart__count">3</span>
+          </button>
         </div>
       </header>
       <main class="main main--grey">
@@ -280,6 +281,55 @@
           <span class="footer__copyright">Copyright 2021. All Rights Reserved</span>
         </div>
       </footer>
+      <div class="check-modal hidden">
+        <div class="check-modal__content hidden">
+          <h3 class="check-modal__title">Thank you for your order</h3>
+          <p class="check-modal__text">You will receive an email confirmation shortly.</p>
+          <div class="check-modal__info">
+            <div class="check-modal__products">
+              <div class="check-modal__item item">
+                <img
+                  src="./images/cart/image-xx99-mark-two-headphones.jpg"
+                  alt=" X99 MK II"
+                  width="50"
+                  height="50"
+                />
+                <div class="item__info">
+                  <h6 class="item__title">XX 99 Mark II</h6>
+                  <span class="item__price">$ 2,999</span>
+                </div>
+                <div class="item__count">x1</div>
+              </div>
+              <div class="check-modal__item item">
+                <img
+                  src="./images/cart/image-xx59-headphones.jpg"
+                  alt="XX59"
+                  width="50"
+                  height="50"
+                />
+                <div class="item__info">
+                  <h6 class="item__title">XX59</h6>
+                  <span class="item__price">$ 899</span>
+                </div>
+                <div class="item__count">x2</div>
+              </div>
+              <div class="check-modal__item item">
+                <img src="./images/cart/image-yx1-earphones.jpg" alt="YX1" width="50" height="50" />
+                <div class="item__info">
+                  <h6 class="item__title">YX1</h6>
+                  <span class="item__price">$ 599</span>
+                </div>
+                <div class="item__count">x1</div>
+              </div>
+            </div>
+            <div class="check-modal__summary">
+              <h3>Grand Total</h3>
+              <span>$ 5,446</span>
+            </div>
+          </div>
+          <a href="/index.html" class="btn btn--primary checkout-modal__btn">Back to Home</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>

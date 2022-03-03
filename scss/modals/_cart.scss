@@ -2,13 +2,14 @@
 
 .modal-cart {
   padding: 3.2rem 3.3rem;
-  // .modal-cart__header
   position: absolute;
   right: 0;
   top: 130%;
   background-color: $whiteColor;
   width: 377px;
   border-radius: 8px;
+
+  // .modal-cart__header
   &__header {
     display: flex;
     align-items: center;

@@ -1,3 +1,17 @@
+fieldset {
+  border: none;
+  legend {
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.6rem;
+
+    letter-spacing: 0.93px;
+    text-transform: uppercase;
+
+    color: $primaryColor;
+  }
+}
 .input--default {
   background: #ffffff;
   border: 1px solid #cfcfcf;

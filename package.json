@@ -1,0 +1,28 @@
+{
+  "name": "audiophile-ecommerce-website",
+  "version": "1.0.0",
+  "description": "markup site practice",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch": "npx sass --no-source-map --watch scss/style.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agdgom/audiophile-ecommerce-website.git"
+  },
+  "keywords": [
+    "flexbox",
+    "grid",
+    "scss",
+    "js"
+  ],
+  "author": "David Agdgomelashvili (agdgom)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Agdgom/audiophile-ecommerce-website/issues"
+  },
+  "homepage": "https://github.com/Agdgom/audiophile-ecommerce-website#readme",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}
