@@ -2,7 +2,7 @@
 .footer {
   position: relative;
   padding: 75px 0px 48px 0px;
-  background-color: $blackColor;
+  background-color: $blackColorPrimary;
   // .footer__container
 
   &__container {
@@ -22,7 +22,7 @@
       justify-content: stretch;
       row-gap: 32px;
     }
-    @media (max-width: 375px) {
+    @media (max-width: 450px) {
       align-items: center;
     }
   }
@@ -34,7 +34,7 @@
     align-items: center;
     column-gap: 3.4rem;
     row-gap: 1.6rem;
-    @media (max-width: 375px) {
+    @media (max-width: 450px) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -81,7 +81,7 @@
     }
     @media (max-width: 375px) {
       bottom: -30px;
-      right: 29%;
+      right: 35%;
       padding-bottom: 3.8rem;
     }
   }

@@ -4,6 +4,10 @@
   top: 0;
   left: 0;
   width: 100%;
+  &--relative {
+    position: relative;
+    background-color: $blackColorPrimary;
+  }
   // .header__menu
 
   &__menu {

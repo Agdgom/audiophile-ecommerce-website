@@ -1,0 +1,53 @@
+.btn {
+  font-size: 1.3rem;
+  line-height: 138%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 1.5rem 2.95rem 1.5rem 3.1rem;
+  color: $blackColorPrimary;
+
+  &--primary {
+    color: $whiteColor;
+    background-color: $primaryColor;
+    &:hover {
+      background-color: $secondaryColor;
+    }
+  }
+  &--outline {
+    border: 1px solid $blackColorPrimary;
+    &:hover {
+      background-color: $blackColorPrimary;
+      color: $whiteColor;
+    }
+  }
+}
+.btn-text {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 138%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.btn-text--with-arrow {
+  &::before {
+    position: absolute;
+    top: 27%;
+    right: -13px;
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    border-top: 2px solid $primaryColor;
+    border-right: 2px solid $primaryColor;
+  }
+  &:hover {
+    color: $primaryColor;
+    &::before {
+      right: -18px;
+    }
+  }
+}

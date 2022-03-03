@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--relative">
+        <div class="header-container container">
+          <div class="menu__icon icon-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <a href="/index.html" class="logo">
+            <img src="./images/logo.png" alt="Audiophile" />
+          </a>
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li><a href="/index.html" class="menu__link">Home</a></li>
+                <li><a href="/headphones.html" class="menu__link">Headphones</a></li>
+                <li><a href="" class="menu__link">Speakers</a></li>
+                <li><a href="" class="menu__link">Earphones</a></li>
+              </ul>
+            </nav>
+          </div>
+          <a href="/checkout.html" class="cart">
+            <img src="./images/cart.svg" alt="Cart" />
+          </a>
+        </div>
+      </header>
+      <main class="main main--grey">
+        <div class="checkout-page__container container">
+          <a href="/index.html" class="back-link">Go Back</a>
+          <section class="checkout">
+            <h1 class="checkout__title">Checkout</h1>
+            <div class="checkout__form">
+              <fieldset id="building-details">
+                <legend>Billing details</legend>
+                <div class="checkout__input">
+                  <label for="customer_name">Name</label>
+                  <input
+                    class="input--default"
+                    type="text"
+                    name="customer_name"
+                    id="customer_name"
+                    placeholder="Alexei Ward"
+                  />
+                </div>
+                <div class="checkout__input">
+                  <label for="customer_email">Email Address</label>
+                  <input
+                    class="input--default"
+                    type="email"
+                    name="customer_email"
+                    id="customer_email"
+                    placeholder="alexei@gmail.com"
+                  />
+                </div>
+                <div class="checkout__input">
+                  <label for="customer_tel">Phone number</label>
+                  <input
+                    class="input--default"
+                    type="tel"
+                    name="customer_tel"
+                    id="customer_tel"
+                    placeholder="+1 202-555-0136"
+                  />
+                </div>
+              </fieldset>
+              <fieldset id="shipping-info">
+                <legend>Shipping Info</legend>
+                <div class="checkout__input">
+                  <label for="customer_address">Address</label>
+                  <input
+                    class="input--default"
+                    type="text"
+                    name="customer_address"
+                    id="customer_address"
+                    placeholder="1137 Williams Avenue"
+                  />
+                </div>
+                <div class="checkout__input">
+                  <label for="customer_zip-code">ZIP Code</label>
+                  <input
+                    class="input--default"
+                    type="text"
+                    name="customer_zip-code"
+                    id="customer_zip-code"
+                    placeholder="10001"
+                  />
+                </div>
+                <div class="checkout__input">
+                  <label for="customer_city">City</label>
+                  <input
+                    class="input--default"
+                    type="text"
+                    name="customer_city"
+                    id="customer_city"
+                    placeholder="New York"
+                  />
+                </div>
+                <div class="checkout__input">
+                  <label for="customer_country">Counrty</label>
+                  <input
+                    class="input--default"
+                    type="text"
+                    name="customer_country"
+                    id="customer_country"
+                    placeholder="United States"
+                  />
+                </div>
+              </fieldset>
+              <fieldset id="payment-details">
+                <legend>Payment Details</legend>
+                <label>Payment Method</label>
+                <div class="checkout__radio">
+                  <label>
+                    <input
+                      type="radio"
+                      name="customer_payment-method"
+                      id="customer_e-money"
+                      value="e-money"
+                    />
+                    <span> e-money</span>
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="customer_payment-method"
+                      id="customer_cash"
+                      value="cach-on-delivery"
+                    />
+                    <span> Cash on Delivery</span>
+                  </label>
+                </div>
+                <div class="checkout__input">
+                  <label for="customer_emoney-number">e-Money Number</label>
+                  <input
+                    class="input--default"
+                    type="number"
+                    min="0"
+                    name="customer_emoney-number"
+                    id="customer_emoney-number"
+                    placeholder="238521993"
+                  />
+                </div>
+                <div class="checkout__input">
+                  <label for="customer_emoney-pin">e-Money PIN</label>
+                  <input
+                    class="input--default"
+                    type="number"
+                    min="0"
+                    max="9999"
+                    name="customer_emoney-pin"
+                    id="customer_emoney-pin"
+                    placeholder="6891"
+                    required
+                  />
+                </div>
+              </fieldset>
+            </div>
+          </section>
+          <section class="summary">
+            <h4 class="summary__title">Summary</h4>
+            <div class="summary__cart cart-block">
+              <div class="cart-block__item">
+                <div class="cart-block__item__image">
+                  <img
+                    src="/images/cart/image-xx99-mark-two-headphones.jpg"
+                    alt="XX99 MK II"
+                    width="64"
+                    height="64"
+                  />
+                </div>
+                <div class="cart-block__item__info">
+                  <h6 class="cart-block__item__title">XX99 MK II</h6>
+                  <span class="cart-block__item__price">2,999</span>
+                </div>
+                <div class="cart-block__item__count">x1</div>
+              </div>
+              <div class="cart-block__item">
+                <div class="cart-block__item__image">
+                  <img
+                    src="/images/cart/image-xx59-headphones.jpg"
+                    alt="XX59"
+                    width="64"
+                    height="64"
+                  />
+                </div>
+                <div class="cart-block__item__info">
+                  <h6 class="cart-block__item__title">XX59</h6>
+                  <span class="cart-block__item__price">899</span>
+                </div>
+                <div class="cart-block__item__count">x2</div>
+              </div>
+              <div class="cart-block__item">
+                <div class="cart-block__item__image">
+                  <img
+                    src="/images/cart/image-yx1-earphones.jpg"
+                    alt="YX1"
+                    width="64"
+                    height="64"
+                  />
+                </div>
+                <div class="cart-block__item__info">
+                  <h6 class="cart-block__item__title">YX1</h6>
+                  <span class="cart-block__item__price">599</span>
+                </div>
+                <div class="cart-block__item__count">x1</div>
+              </div>
+            </div>
+            <div class="summary__info info">
+              <div class="info__total">Total <span>$ 5,396</span></div>
+              <div class="info__shipping">Shipping <span>$ 50</span></div>
+              <div class="info__vat">VAT (Included) <span>$ 1,079</span></div>
+              <div class="info__grand-total">Grand Total <span>$ 5446</span></div>
+            </div>
+            <button class="btn btn--primary summary__btn">Continue & pay</button>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+          <nav class="footer__menu">
+            <a href="#" class="logo">
+              <img src="./images/logo.png" alt="Audiophile" />
+            </a>
+            <ul class="footer__menu-list">
+              <li><a href="" class="footer__link">Home</a></li>
+              <li><a href="" class="footer__link">Headphones</a></li>
+              <li><a href="" class="footer__link">Speakers</a></li>
+              <li><a href="" class="footer__link">Earphones</a></li>
+            </ul>
+          </nav>
+          <div class="footer__content">
+            <p class="footer__text">
+              Audiophile is an all in one stop to fulfill your audio needs. We're a small team of
+              music lovers and sound specialists who are devoted to helping you get the most out of
+              personal audio. Come and visit our demo facility - we’re open 7 days a week.
+            </p>
+            <div class="footer__social social">
+              <a href="" class="social__link" id="facebook-link">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </a>
+              <a href="" class="social__link" id="twitter-link">
+                <svg width="24" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </a>
+              <a href="" class="social__link" id="instagram-link">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <span class="footer__copyright">Copyright 2021. All Rights Reserved</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
