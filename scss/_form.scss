@@ -79,6 +79,11 @@ input[type='number']::-webkit-inner-spin-button {
     line-height: 1.8rem;
     text-transform: uppercase;
     color: rgb(0, 0, 0, 0.25);
+    transition: color 0.8s ease-in 0s;
+    &:hover {
+      transform: scale(1.2);
+      color: $primaryColor;
+    }
   }
   .number-minus {
     left: 1.55rem;

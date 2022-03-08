@@ -1,5 +1,12 @@
 // Modal Cart
-
+@keyframes hiddenCart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .modal-cart {
   padding: 3.2rem 3.3rem;
   position: absolute;
@@ -8,7 +15,8 @@
   background-color: $whiteColor;
   width: 377px;
   border-radius: 8px;
-
+  animation: hiddenCart 1s;
+  z-index: 30;
   // .modal-cart__header
   &__header {
     display: flex;

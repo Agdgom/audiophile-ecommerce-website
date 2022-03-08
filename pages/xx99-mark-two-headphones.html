@@ -49,7 +49,7 @@
               <div class="modal-cart__items">
                 <div class="modal-cart__item">
                   <img
-                    src="./images/cart/image-xx99-mark-two-headphones.jpg"
+                    src="../images/cart/image-xx99-mark-two-headphones.jpg"
                     alt=" X99 MK II"
                     width="64"
                     height="64"
@@ -78,7 +78,7 @@
                 </div>
                 <div class="modal-cart__item">
                   <img
-                    src="./images/cart/image-xx59-headphones.jpg"
+                    src="../images/cart/image-xx59-headphones.jpg"
                     alt="XX 59"
                     width="64"
                     height="64"
@@ -107,7 +107,7 @@
                 </div>
                 <div class="modal-cart__item">
                   <img
-                    src="./images/cart/image-yx1-earphones.jpg"
+                    src="../images/cart/image-yx1-earphones.jpg"
                     alt="YX1"
                     width="64"
                     height="64"
@@ -143,27 +143,116 @@
           </div>
         </div>
       </header>
-      <main class="main main--grey container">
-        <a href="./index.html" class="back-link">Go Back</a>
+      <main class="main main--grey">
         <section class="product-preview">
-          <picture class="product-preview__image">
-            <source
-              media="(max-width:600px)"
-              srcset="
-                ../images/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg
-              "
-            />
-            <source
-              media="(max-width:768px)"
-              srcset="
-                ../images/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg
-              "
-            />
+          <div class="product-preview__container container">
+            <a href="../index.html" class="back-link">Go Back</a>
+            <div class="product-preview__image">
+              <img
+                src="../images/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg"
+                alt="X99 MK II"
+              />
+            </div>
+            <div class="product-preview__content">
+              <span class="subtitle product-preview__subtitle">New Product</span>
+              <h2 class="product-preview__title">XX99 Mark II headphones</h2>
+              <p class="product-preview__text">
+                The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your
+                premium headphone experience by reproducing the balanced depth and precision of
+                studio-quality sound.
+              </p>
+              <div class="product-preview__price">$ 2,999</div>
+              <div class="input--range product-preview__item-input">
+                <button
+                  class="number-minus"
+                  type="button"
+                  onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
+                >
+                  -
+                </button>
+                <input type="number" min="1" value="2" readonly />
+                <button
+                  class="number-plus"
+                  type="button"
+                  onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
+                >
+                  +
+                </button>
+              </div>
+              <button class="btn btn--primary product-preview__btn">Add to Cart</button>
+            </div>
+          </div>
+        </section>
+        <section class="product-features">
+          <div class="product-features__container container">
+            <div class="product-features__content">
+              <h3 class="product-features__title">Features</h3>
+              <p class="product-features__text">
+                Featuring a genuine leather head strap and premium earcups, these headphones deliver
+                superior comfort for those who like to enjoy endless listening. It includes
+                intuitive controls designed for any situation. Whether you’re taking a business call
+                or just in your own personal space, the auto on/off and pause features ensure that
+                you’ll never miss a beat.
+              </p>
+              <p class="product-features__text">
+                The advanced Active Noise Cancellation with built-in equalizer allow you to
+                experience your audio world on your terms. It lets you enjoy your audio in peace,
+                but quickly interact with your surroundings when you need to. Combined with
+                Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II
+                headphones gives you superior sound, cutting-edge technology, and a modern design
+                aesthetic.
+              </p>
+            </div>
+            <div class="product-features__list">
+              <h3 class="product-features__title">In the Box</h3>
+              <ul>
+                <li><span>1x</span> Headphone Unit</li>
+                <li><span>2x</span> Replacement Earcups</li>
+                <li><span>1x</span> User Manual</li>
+                <li><span>1x</span> 3.5mm 5m Audio Cable</li>
+                <li><span>1x</span> Travel Bag</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="product-gallery container">
+          <div class="product-gallery__image">
             <img
-              src="../images/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg"
-              alt="X99 MK II"
+              src="../images/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg"
+              alt="Image 1"
             />
-          </picture>
+          </div>
+          <div class="product-gallery__image">
+            <img
+              src="../images/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg"
+              alt="Image 3"
+            />
+          </div>
+          <div class="product-gallery__image">
+            <img
+              src="../images/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg"
+              alt="Image 2"
+            />
+          </div>
+        </section>
+        <section class="overview">
+          <div class="overview__container container">
+            <div class="overview__content">
+              <h2 class="overview__title">Bringing you the <span>best</span> audio gear</h2>
+              <p class="overview__text">
+                Located at the heart of New York City, Audiophile is the premier store for high end
+                headphones, earphones, speakers, and audio accessories. We have a large showroom and
+                luxury demonstration rooms available for you to browse and experience a wide range
+                of our products. Stop by our store to meet some of the fantastic people who make
+                Audiophile the best place to buy your portable audio equipment.
+              </p>
+            </div>
+            <picture class="overview__image">
+              <source media="(max-width:600px)" srcset="../images/mobile/image-best-gear.jpg" />
+              <source media="(max-width:768px)" srcset="../images/tablet/image-best-gear.jpg" />
+              <img src="../images/desktop/image-best-gear.jpg" alt="Image best gear" />
+            </picture>
+          </div>
         </section>
       </main>
       <footer class="footer">
