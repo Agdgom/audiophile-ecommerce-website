@@ -20,6 +20,18 @@
       color: $whiteColor;
     }
   }
+  //animation
+  &--primary,
+  &--outline {
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in 0s;
+    &:active {
+      top: 10px;
+      transform: scale(0.8);
+    }
+  }
 }
 .btn-text {
   position: relative;
@@ -43,6 +55,7 @@
     transform: rotate(45deg);
     border-top: 2px solid $primaryColor;
     border-right: 2px solid $primaryColor;
+    transition: right 0.3s ease-in 0s;
   }
   &:hover {
     color: $primaryColor;

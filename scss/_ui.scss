@@ -98,6 +98,7 @@
   // .menu__link
 
   &__link {
+    position: relative;
     color: $whiteColor;
     font-weight: bold;
     font-size: 1.3rem;
@@ -105,8 +106,22 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: color 0.3s ease 0s;
+    &::after {
+      position: absolute;
+      bottom: -30%;
+      left: 0%;
+      content: '';
+      display: block;
+      width: 0%;
+      height: 2px;
+      background-color: $primaryColor;
+      transition: width 0.3s ease 0s;
+    }
     &:hover {
       color: $primaryColor;
+      &::after {
+        width: 100%;
+      }
     }
     @media (max-width: 768px) {
       font-size: 3rem;
@@ -124,10 +139,13 @@
     svg {
       fill: $whiteColor;
     }
+    transition: transform 0.8s ease-in 0s;
     &:hover {
       svg {
         fill: $primaryColor;
       }
+
+      transform: rotate(360deg);
     }
   }
 }
